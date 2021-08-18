@@ -1,0 +1,209 @@
+.calendar {
+
+    height: auto;
+    overflow: visible;
+
+    .important_data {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 275px;
+        justify-content: start;
+        margin: 20px auto 0 auto;
+    }
+
+    .e-calendar {
+        border: 0;
+        max-width: 100%;
+        width: 100%;
+        overflow: hidden;
+        margin-top:12px;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+
+    .e-calendar.e-content td.e-focused-date.e-today span.e-day {
+        border: 0;
+        color: #fff;
+        background: #F7C667;
+    }
+
+    .e-calendar .e-content td.e-selected span.e-day{
+        color: #fff;
+        background: #F7C667  !important;
+        border: 0;
+    }
+
+    .e-calendar .e-content td.e-today:hover span.e-da{
+        border: 0;
+    }
+
+    .e-calendar .e-content td.e-focused-date span.e-day,
+    .e-calendar .e-content td.e-focused-date:hover span.e-day,
+    .e-calendar .e-content td.e-focused-date:focus span.e-day,
+    .e-bigger.e-small .e-calendar .e-content td.e-focused-date span.e-day,
+    .e-bigger.e-small .e-calendar .e-content td.e-focused-date:hover span.e-day,
+    .e-bigger.e-small .e-calendar .e-content td.e-focused-date:focus span.e-day {
+        color: #fff;
+        background: #F7C667;
+        border: 0;
+    }
+
+    .e-calendar .e-content td.e-today span.e-day{
+        border: 0;
+        color: #fff;
+        background: #8cc6f6;
+    }
+
+    .e-calendar th {
+        font-family: "AppleSDGothicNeoB";
+    }
+
+    .e-day {
+        font-family: "AppleSDGothicNeoR";
+    }
+
+    .e-title {
+        font-size: 24px !important;
+        font-family: "AppleSDGothicNeoSB";
+        color: #f5aa19 !important;
+    }
+
+    .e-footer-container {
+        display: none !important;
+    }
+
+    .title_wrap {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .date_title {
+        font-size: 19px;
+        font-family: "AppleSDGothicNeoSB";
+        color:#f5aa19;
+        margin:7px 0;
+        width: 100%;
+    }
+
+    .all_view {
+        font-size: 12px;
+        color: #808080;
+    }
+
+    .date_wrap {
+        display: flex;
+        width: 100%;
+        height: 35px;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        border-radius: 30px;
+
+        p{
+            font-size: 16px;
+            font-family: "AppleSDGothicNeoR";
+            color: #707070;
+        }
+    }
+
+    #d_day_txt{
+        font-family: "AppleSDGothicNeoR";
+        font-size: 16px;
+    }
+
+    #li2{
+        margin-bottom:0;
+    }
+
+    .footer_bar button {
+        display: none;
+    }
+
+    .d_txt_wrap{
+        display: flex;
+        flex-direction:column;
+
+        .e-date-wrapper{
+            order: 1;
+        }
+
+        input{
+            width:87%;
+            border-bottom: 1px solid #808080;
+            box-sizing: border-box;
+            order: 0;
+        }
+    }
+
+    .e-date-picker{
+        right: 0 !important;
+        left: inherit !important;
+    }
+
+    .e-input-group{
+        border: 0 !important;
+        height: 5px;
+    }
+
+    .e-input-group-icon{
+        position: relative;
+        top: -22px;
+    }
+
+    .e-input-group:not(.e-float-icon-left):not(.e-float-input)::before{
+        background: transparent !important;
+    }
+    
+    .e-input-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-input)::after{
+        background: transparent;
+    }
+
+    .e-clear-icon {
+        opacity: 0;
+    }
+
+    .d_days{
+        float: right;
+        width : 58px;
+        height : 25px;
+        overflow : hidden;
+        background : #80c4fd;
+        color : #fff;
+        border-radius : 50px;
+        font-size : 14px;
+        border : 0;
+        order: 1;
+        cursor: pointer;
+        position: relative;
+        z-index: 1000;
+    }
+
+    #ej2-datepicker_42{
+        // text-indent: -9999px;
+    }
+
+    .button_wrap{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .dday-reset{
+        border: 0;
+        outline: 0;
+        font-family: "AppleSDGothicNeoR";
+        font-size: 15px;
+        float: right;
+        margin-right: 10px;
+        text-decoration: underline;
+        cursor: pointer;
+        order: 0;
+        position: relative;
+        z-index: 1000;
+    }
+    
+}

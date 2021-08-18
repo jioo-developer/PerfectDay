@@ -1,0 +1,78 @@
+.editor{
+    margin:0 auto;
+    width: 90%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    margin-top: -115px;
+    background: #fff;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    box-sizing: border-box;
+
+    b{
+        text-align: center;
+        font-family: "AppleSDGothicNeoR";
+        color: #444;
+    }
+
+    .text_area{
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        box-sizing: border-box;
+        height: 45px;
+    }
+
+    .date_wrap{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .date{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .day{
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        box-sizing: border-box;
+        padding-bottom: 5px;
+        font-family: "AppleSDGothicNeoM";
+    }
+
+    .time_wrap{
+        display: flex;
+        width: 100%;
+        height: auto !important;
+        overflow: hidden;
+        justify-content: space-between;
+    }
+
+    button{
+        width: 100%;
+        height: 40px;
+        background: #f7c668;
+        border-radius: 28px;
+        border: 0;
+        color: #fff;
+    }
+
+    .time_txt{
+        margin-top: 10px;
+        width: 30%;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    .time_txt:last-child{
+        border-right: 0;
+    }
+}
